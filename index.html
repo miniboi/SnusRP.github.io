@@ -1,0 +1,165 @@
+<html>
+<head>
+<title>Bitcoin Guide</title>
+<link rel="stylesheet" href="menu.css">
+</head>
+<style>
+h1 {
+    text-shadow: 2px 2px cyan;
+}
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+</style>
+<body style="background-color:rgba(241,231,103,1);">
+<link rel="stylesheet" type="text/css" href="table.css" media="screen" />
+<div class="w3-bar w3-red">
+  <a href="index.html" class="w3-bar-item w3-button">Hem</a>
+  <a href="cgminerLinux.html" class="w3-bar-item w3-button">CGMiner på Ubuntu</a>
+  <a href="btc.html" class="w3-bar-item w3-button">Statistik</a>
+</div>
+<button onclick="topFunction()" id="myBtn" title="GåTIllTopp">Gå till toppen</button>
+<script>
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+<h1 style="text-align: center;">Bitcoin Guide - Allt du behöver veta om Bitcoins</h1>
+<h2 style="text-align: center;">Holger W. TE17B</h2>
+<h3>Vad är Bitcoin?</h3>
+<p>Bitcoin är en helt ny typ av valuta. Syftet är detsamma som med alla andra pengar - att kunna använda som betalningsmedel eller för att lagra värde - men i övrigt finns en mängd skillnader.<strong><br /></strong></p>
+<ul>
+<li>Bitcoin har ingen central utfärdare såsom riksbanken för svenska kronor. Istället skapas bitcoins i förutbestämd takt i ett P2P-nätverk dit vem som helst kan ansluta sig och där alla transaktioner journalförs. Mängden tillgängliga bitcoins ökar snabbt i början men ökningstakten minskar och den totala mängden stannar till slut på ca 21 miljoner.</li>
+<li>Transaktioner kan ske direkt mellan användare utan att någon tredje part är inblandad. Vanligtvis om du vill föra över kronor från ditt bankkonto till en kompis måste du ta hjälp av banken och banken kommer att känna till exakt vilka transaktioner ni gör. I det här avseendet liknar Bitcoin kontanter eftersom transaktioner om man vill kan göras anonymt och direkt mellan privatpersoner.</li>
+<li>Trots likheterna med kontanter är det inte möjligt att förfalska bitcoins på samma sätt som du kan skapa en kopia av en sedel. Bitcoin är baserad på kryptoteknik och använder sig av assymetrisk kryptering för att signera transaktioner. Utan tillgång till de privata nycklar som motsvarar dina tillgångar finns ingen möjlighet att stjäla dina pengar.</li>
+</ul>
+<p>Bitcoin lämpar sig utmärkt för snabba överföringar av pengar mellan personer eller företag över hela världen. Transaktionskostnaderna är väldigt låga tack vare det P2P-nätverk som bekräftar transaktionerna och överföringen går snabbt och enkelt. På en timme är en transaktion bekräftad och klar, att jämföra med flera dagar för internationella banköverföringar.</p>
+<p></p>
+<h3>Värde</h3>
+<p>Bitcoins ändrar värde hela tiden. Nedan finner du ett diagram om hur värdet har utvecklats under åren.</p>
+<table class="redTable">
+<thead>
+<tr>
+<th>År</th>
+<th>USD/BTC</th>
+<th>SEK/BTC</th>
+</tr>
+</thead>
+<tfoot>
+<tr>
+<td colspan="3">
+</td>
+</tr>
+</tfoot>
+<tbody>
+<tr>
+<td>2010</td>
+<td>$0.06</td>
+<td>0.5 SEK</td>
+</tr>
+<tr>
+<td>2011</td>
+<td>$0.31</td>
+<td>2.5 SEK</td>
+</tr>
+<tr>
+<td>2012</td>
+<td>$6.18</td>
+<td>51.6 SEK</td>
+</tr>
+<tr>
+<td>2013</td>
+<td>$13.96</td>
+<td>116.7 SEK</td>
+</tr>
+<tr>
+<td>2014</td>
+<td>$881.66</td>
+<td>7 370.5 SEK</td>
+</tr>
+<tr>
+<td>2015</td>
+<td>$280.71</td>
+<td>2 346.7 SEK</td>
+</tr>
+<tr>
+<td>2016</td>
+<td>$443.56</td>
+<td>3 708.1 SEK</td>
+</tr>
+<tr>
+<td>2017</td>
+<td>$10 203.32</td>
+<td>85 297.8 SEK</td>
+</tr>
+</tbody>
+</table>
+<p></p>
+<h3>Spårning</h3>
+<p>Eftersom Bitcoins är krypterade är de väldigt svåra att spåra. På grund av detta har man de senaste åren upptäckt att Bitcoins används för att köpa illegala varor som till exempel vapen, droger, stöldgods, etcetera. Därför säljer inga företag i Sverige Bitcoins anonymt längre. Man måste alltså uppge sina uppgifter och visa legitimation med en bild som skickas till företaget. Det finns två kända tekniker som vanligtvis används för att få sina Bitcoins anonyma. De heter CoinJoin och Mixer (även kallat Tumbler).</p>
+<p><img src="https://image.ibb.co/cjHTFG/Coin_Join_Example_svg.png" alt="CoinJoin" width="807" height="315" /></p>
+<p>CoinJoin</p>
+<p></p>
+<p><img src="https://image.ibb.co/iZ1oFG/Bitcoin_tumbler_mixer.png" alt="Mixer" width="674" height="428" /></p>
+<p>Mixer/Tumbler</p>
+<h3>Transaktioner</h3>
+<p>När bitcoins skall överföras från adress A till B skapas en transaktion av ägaren till adress A. Transaktionen signeras med den privata nyckeln som svarar mot adress A och publiceras sedan till nätverket. Nu finns alltså en transaktion som alla noder i nätverket känner till, men enligt problematiken om dubbelspendering skulle förstås ägaren till A samtidigt kunna sända ut en snarlik transaktion där summan istället skickas till adressen C, och en annan där den skickas till adressen D. För att ägaren till adress B skall kunna vara säker på att transaktionen är ”bekräftad” måste nätverket komma överrens om vilken transaktion som är den riktiga.</p>
+<h3>Blockkedjan</h3>
+<p>Eftersom ingen central auktoritet finns som kan journalföra och godkänna transaktioner har Bitcoin istället en publik, distribuerad databas som kallas blockkedjan där alla transaktioner som sker i Bitcoinnätverket lagras. För att en transaktion skall vara bekräftad måste den finnas med i ett block. Att skapa ett block som kommer med i blockkedjan är en tävling mellan ”miners” i nätverket och det är fritt fram för vem som helst att vara med. Priset i tävlingen är 50 nyskapade bitcoins samt alla (frivilliga) transaktionsavgifter som följer med de transaktioner som inkluderas i blocket. Belöningen på 50 bitcoins halveras ungefär vart fjärde år vilket gör att det totala antalet bitcoins slutligen kommer att stanna på strax under 21 miljoner.</p>
+<p>Så hur skapas ett block? Ett block komponeras av de transaktioner som ska  inkluderas, en referens till det föregående blocket samt ett godtyckligt värde som kallas ”nonce”. Allt detta hashas sedan med SHA-256 och om värdet då blir lägre än den aktuella svårighetsgraden så har man lyckats skapa ett block som kommer att accepteras av nätverket. När det inte lyckas ändras nonce-värdet och så görs ett nytt försök, om och om igen tills ett godkänt block är skapat (eller någon annan hunnit före). Svårighetsgraden justeras varannan vecka så att nya block alltid ska skapas i snitt var tionde minut.</p>
+<h3>Hur skapar man Bitcoins?</h3>
+<p>Just nu genereras 12,5 bitcoins för varje block (denna siffra halveras ungefär var fjärde år) och dessa tillfaller den som lyckas skapa blocket. Att skapa ett block är ett trial-and-error-arbete där det gäller att hitta ett hashvärde som är tillräckligt litet, så ju fler hashvärden du hinner räkna ut under en viss tid desto större chans att vara den som skapar nästa block. Eftersom så mycket datorkraft över hela världen tävlar om detta kan det ta väldigt lång tid innan du lyckas skapa ett block så därför väljer folk ofta att gå ihop i grupper (s.k. Mining Pools) där man istället delar på belöningen när någon i gruppen skapat ett block. Ju större poolen är, desto större brukar belöningen vara. Nedan finner du ett diagram på de största poolerna (2017)</p>
+<p><img src="https://www.buybitcoinworldwide.com/wp-content/uploads/2017/02/pools.png" alt="" width="808" height="655" /></p>
+<p>Källa: <a href="https://www.buybitcoinworldwide.com/">buybitcoinworldwide.com</a></p>
+<p>Det är viktigt med bra datorkomponenter för att generera Bitcoins. Du kan antingen generera Bitcoins med hjälp av grafikkorte, eller processorn. Det vanligaste är att generera Bitcoins med hjälp av grafikkort, eftersom man kan ha flera grafikkort men bara en processor. AMD är ett bra val när man ska generera Bitcoins med hjälp av processorn, eftersom AMD har fler kärnor än Intel. Grafikkort spelar inte någon större roll om det är Nvidia eller AMD. Men i ett test som utfördes av <a href="http://www.legitreviews.com/">legitreviews.com</a> där man testade olika grafikkort för Etherum-mining så lyckades ett AMD Radeon R9 295X2 (8GB/1018MHz/1250MHz) prestera på otroliga 57.68 Mh/s (Mega hash per sekund).</p>
+<p>För att börja generera Bitcoins krävs det en miner. Den vanligaste minern är <a href="https://github.com/ckolivas/cgminer">CGMiner</a>, vilket inte har någon GUI. Det är endast en konsol-applikation.</p>
+<p><img src="http://cryptomining-blog.com/wp-content/uploads/2014/01/cgminer-3-7-2-gpu.jpg" width="756" height="393" /></p>
+<p>CGMiner</p>
+<h3>Köpa Bitcoins</h3>
+<p>Bitcoins går att köpa på många hemsidor. I Sverige är det vanligast att köpa Bitcoins från <a href="http://www.bt.cx/">bt.cx</a>. <a href="http://www.localbitcoins.com/">LocalBitcoins.com</a> är en populär hemsida där man kan köpa Bitcoins från privatpersoner, precis som på Blocket eller Tradera etcetera.</p>
+<h3>Plånböcker</h3>
+<h4>Lokala plånböcker</h4>
+<p>Plånböcker som lagrar bitcoins kan delas upp i tre kategorier. Den första varianten är när dina bitcoins sparas lokalt på din egen dator vilket är fallet med t.ex. originalklienten från bitcoin.org. Om du väljer att spara dina bitcoins på din egen dator måste du tänka extra mycket på säkerheten. Skulle du råka ta bort plånboksfilen eller om din hårddisk skulle krascha så är med största sannolikhet dina bitcoins borta. Det gäller därför att se till att ta backuper, det är ju trots allt en fördel med digitala pengar, att det går att kopiera dem och ha dem på flera ställen. Tänk dock på att förvara dessa backuper säkert!
+Plånböcker/klienter som tillhör denna kategori är: <a href="https://bitcoin.org/en/download">Bitcoin-Qt</a>, <a href="https://electrum.org/#home">Electrum</a>, <a href="https://www.bitcoinarmory.com/">Armory</a>, <a href ="https://multibit.org/">MultiBit</a>.</p>
+<p><img src="https://www.weusecoins.com/images/electrum-wallet.png" alt="https://www.weusecoins.com/images/electrum-wallet.png" width="798" height="440" /></p>
+<p>Electrum (Ubuntu, AMD64)</p>
+<h4>E-Plånböcker</h4>
+<p>Den andra varianten är den rena e-plånboken där dina pengar lagras på ett företags server någonstans. Fördelen med dessa  är att det oftast är enkelt att komma åt dem via webben och att du lämnar backupproblematiken åt företaget. Du kan också vanligtvis köpa och sälja Bitcoins direkt på E-Plånbokens hemsida. Nackdelen är att du måste lita på företaget som driver tjänsten eftersom de när som helst skulle kunna ta dina pengar och sticka. Du måste också lita på att de kan sköta säkerheten ordentligt så att de inte blir bestulna på sina (dina) bitcoins eftersom det förmodligen också betyder att du sett det sista av dem.
+Plånböcker/klienter som tillhör denna kategori är <a href="https://www.bitstamp.net/">Bitstamp</a> och <a href="https://www.coinbase.com/">Coinbase</a>.</p>
+<h4>Hybrider</h4>
+<p>Den tredje varianten kombinerar fördelarna av de två första. Här erbjuder man ett lättanvänt webbgränssnitt som du kan komma åt från vilken dator som helst men utan att företaget har tillgång till dina pengar. Detta sker genom att dina privata nycklar krypteras innan de skickas över till företagets server. Javascript i din webbläsare tar hand om att hämta och dekryptera din plånbok så att du aldrig behöver skicka lösenordet till servern. Nackdelen med denna lösning jämfört med en vanlig e-plånbok är att det inte går att återställa ett borttappat lösenord. Är lösenordet borta så är dina bitcoins borta.
+Plånböcker/klienter som tillhör denna kategori är exempelvis <a href="https://strongcoin.com/">StrongCoin</a>.</p>
+<h4>Mobila klienter</h4>
+<p>Värt att nämna är att det finns väldigt många mobila klienter. De är oftast säkra och väldigt smidiga eftersom man vanligtvis alltid har mobilen på sig. Man kan jämföra mobila klienter med Swish. Den vanligaste och säkraste klienten på iPhone är Breadwallet och den säkraste på Android mobiler är Samourai Wallet, som fortfarande är i de tidigare Alpha-versionerna.</p>
+<p>Breadwallet:</p>
+<p><a href="https://itunes.apple.com/us/app/bread-bitcoin-wallet/id885251393?mt=8"><img src="https://vignette2.wikia.nocookie.net/call-of-mini-infinity/images/6/64/Ec6a786d_available-on-iphone-app-store-logo.png/revision/latest?cb=20150705143812" alt="" width="200" height="68" /></a></p>
+<p>Samourai Wallet:</p>
+<p><a href="https://play.google.com/store/apps/details?id=com.samourai.wallet&amp;hl=sv"><img src="https://vignette.wikia.nocookie.net/implosion/images/7/74/Google_play.png/revision/latest?cb=20150411081733" alt="" width="200" height="69" /></a></p>
+</body>
+</html>
