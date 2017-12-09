@@ -1,13 +1,13 @@
 <html>
-<head>
-<title>Bitcoin Guide</title>
-<link rel="stylesheet" href="menu.css">
+<head> 
+<title>Bitcoin Guide</title> <!--Titel på sidan-->
+<link rel="stylesheet" href="menu.css"> <!--Infogar CSS-dokument med menyn (Hem, CGMiner på Ubuntu, osv.)-->
 </head>
 <style>
 h1 {
-    text-shadow: 2px 2px cyan;
+    text-shadow: 2px 2px cyan; <!--Lägger till en turkos skugga bakom header1-texten-->
 }
-#myBtn {
+#myBtn { <!--Skapar en röd knapp-->
   display: none;
   position: fixed;
   bottom: 20px;
@@ -23,33 +23,33 @@ h1 {
 }
 
 #myBtn:hover {
-  background-color: #555;
+  background-color: #555; <!-- ändrar nyans på knappen när man håller musen på den-->
 }
 </style>
-<body style="background-color:rgba(241,231,103,1);">
-<link rel="stylesheet" type="text/css" href="table.css" media="screen" />
-<div class="w3-bar w3-red">
-  <a href="index.html" class="w3-bar-item w3-button">Hem</a>
+<body style="background-color:rgba(241,231,103,1);"> <!--Öppnar body, samt lägger till en gul bakgrundsfärg med hjälp av rgba kod-->
+<link rel="stylesheet" type="text/css" href="table.css" media="screen" /> <!--Infogar CSS-dokument med tabellen om Bitcoins värde-->
+<div class="w3-bar w3-red"> <!--Ger knapparna i menyn funktioner. Alla knappar refererar till ett annat HTML-dokument.-->
+  <a href="index.html" class="w3-bar-item w3-button">Hem</a> <!-- Exempel: Första knappen har texten "Hem" och den refererar till detta HTML-dokument-->
   <a href="cgminerLinux.html" class="w3-bar-item w3-button">CGMiner på Ubuntu</a>
   <a href="btc.html" class="w3-bar-item w3-button">Statistik</a>
 </div>
-<button onclick="topFunction()" id="myBtn" title="GåTIllTopp">Gå till toppen</button>
-<script>
+<button onclick="topFunction()" id="myBtn" title="Gå till toppen">Gå till toppen</button> <!--Ger den röda knappen med hjälp av id (myBtn) en funktion, namn/beskrivning, och text-->
+<script> <!--Skapar ett skript-->
 window.onscroll = function() {scrollFunction()};
 
-function scrollFunction() {
+function scrollFunction() { <!-- gerskriptet funktionen att rulla upp till toppen-->
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        document.getElementById("myBtn").style.display = "block";
+        document.getElementById("myBtn").style.display = "block"; <!--Ger den röda knappen skriptets funktion-->
     } else {
-        document.getElementById("myBtn").style.display = "none";
+        document.getElementById("myBtn").style.display = "none"; <!--Gör så att knappen blir osynlig om användaren redan rullat upp till toppen-->
     }
 }
 
-function topFunction() {
+function topFunction() { <!--Ger variablen topFunktion en funktion-->
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 }
-</script>
+</script><!--Stänger skriptet-->
 <h1 style="text-align: center;">Bitcoin Guide - Allt du behöver veta om Bitcoins</h1>
 <h2 style="text-align: center;">Holger W. TE17B</h2>
 <h3>Vad är Bitcoin?</h3>
@@ -63,12 +63,12 @@ function topFunction() {
 <p></p>
 <h3>Värde</h3>
 <p>Bitcoins ändrar värde hela tiden. Nedan finner du ett diagram om hur värdet har utvecklats under åren.</p>
-<table class="redTable">
+<table class="redTable"> <!--Använder tabellen med bitcoins värde-->
 <thead>
 <tr>
-<th>År</th>
-<th>USD/BTC</th>
-<th>SEK/BTC</th>
+<th>År</th> <!-- Titel på kolumn #1-->
+<th>USD/BTC</th> <!-- Titel på kolumn #2-->
+<th>SEK/BTC</th><!-- Titel på kolumn #3-->
 </tr>
 </thead>
 <tfoot>
@@ -79,9 +79,9 @@ function topFunction() {
 </tfoot>
 <tbody>
 <tr>
-<td>2010</td>
-<td>$0.06</td>
-<td>0.5 SEK</td>
+<td>2010</td> <!-- Text på kolumn #1-->
+<td>$0.06</td> <!-- Text på kolumn #2-->
+<td>0.5 SEK</td> <!-- Text på kolumn #3-->
 </tr>
 <tr>
 <td>2011</td>
@@ -123,7 +123,7 @@ function topFunction() {
 <p></p>
 <h3>Spårning</h3>
 <p>Eftersom Bitcoins är krypterade är de väldigt svåra att spåra. På grund av detta har man de senaste åren upptäckt att Bitcoins används för att köpa illegala varor som till exempel vapen, droger, stöldgods, etcetera. Därför säljer inga företag i Sverige Bitcoins anonymt längre. Man måste alltså uppge sina uppgifter och visa legitimation med en bild som skickas till företaget. Det finns två kända tekniker som vanligtvis används för att få sina Bitcoins anonyma. De heter CoinJoin och Mixer (även kallat Tumbler).</p>
-<p><img src="https://image.ibb.co/cjHTFG/Coin_Join_Example_svg.png" alt="CoinJoin" width="807" height="315" /></p>
+<p><img src="https://image.ibb.co/cjHTFG/Coin_Join_Example_svg.png" <!--Infogar bild från URL--> alt="CoinJoin" <!--Ger bilden en beskrivning om man håller musen på bilden--> width="807" height="315" <!--Storlek på bild (b*h)--> /></p> 
 <p>CoinJoin</p>
 <p></p>
 <p><img src="https://image.ibb.co/iZ1oFG/Bitcoin_tumbler_mixer.png" alt="Mixer" width="674" height="428" /></p>
@@ -158,7 +158,7 @@ Plånböcker/klienter som tillhör denna kategori är exempelvis <a href="https:
 <h4>Mobila klienter</h4>
 <p>Värt att nämna är att det finns väldigt många mobila klienter. De är oftast säkra och väldigt smidiga eftersom man vanligtvis alltid har mobilen på sig. Man kan jämföra mobila klienter med Swish. Den vanligaste och säkraste klienten på iPhone är Breadwallet och den säkraste på Android mobiler är Samourai Wallet, som fortfarande är i de tidigare Alpha-versionerna.</p>
 <p>Breadwallet:</p>
-<p><a href="https://itunes.apple.com/us/app/bread-bitcoin-wallet/id885251393?mt=8"><img src="https://vignette2.wikia.nocookie.net/call-of-mini-infinity/images/6/64/Ec6a786d_available-on-iphone-app-store-logo.png/revision/latest?cb=20150705143812" alt="" width="200" height="68" /></a></p>
+<p><a href="https://itunes.apple.com/us/app/bread-bitcoin-wallet/id885251393?mt=8"> <!--Ger bilden en länk som öppnas när man klickar på bilden--><img src="https://vignette2.wikia.nocookie.net/call-of-mini-infinity/images/6/64/Ec6a786d_available-on-iphone-app-store-logo.png/revision/latest?cb=20150705143812" alt="" width="200" height="68" /></a></p>
 <p>Samourai Wallet:</p>
 <p><a href="https://play.google.com/store/apps/details?id=com.samourai.wallet&amp;hl=sv"><img src="https://vignette.wikia.nocookie.net/implosion/images/7/74/Google_play.png/revision/latest?cb=20150411081733" alt="" width="200" height="69" /></a></p>
 </body>
